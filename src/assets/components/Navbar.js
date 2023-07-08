@@ -8,17 +8,6 @@ const Navbar = (props) => {
           <a className="navbar-brand" href="#">
             <h3 className="fw-bold">Repohub</h3>
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
           <div className="" id="navbarSupportedContent">
             <button
               className="btn border-0 fw-semibold"
