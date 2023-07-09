@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 import Img_Home from "../../assets/img/digital.png";
-import Angle from "../../assets/img/angle-right-solid 1.png";
 import Service1 from "../../assets/img/our_service_1 1.png";
 import Service2 from "../../assets/img/our_service_2 1.png";
 import Service3 from "../../assets/img/our_service_3.png";
-import Arrow from "../../assets/img/arrow-right-solid 1.png";
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const Home = (props) => {
   const Works = [
@@ -23,6 +23,18 @@ const Home = (props) => {
     { id: 4, src: [Service1], subtitle: "Research & Analysis" },
   ];
 
+  useEffect(() => {
+    ScrollReveal().reveal(".headline", {
+      origin: "bottom",
+      distance: "100px",
+      duration: 2000,
+      reset: true,
+      interval: 200,
+      scale: 0.8,
+      viewFactor: 0.2,
+    });
+  }, []);
+
   return (
     <div>
       {/* Home section */}
@@ -30,12 +42,12 @@ const Home = (props) => {
         <div className="container mx-auto">
           <div className="row">
             <div className="col-12">
-              <h1 className="fw-normal mt-5">Digital Agency</h1>
-              <h1 className="fw-semibold mt-5">
+              <h1 className="fw-normal mt-5 headline">Digital Agency</h1>
+              <h1 className="fw-semibold mt-5 headline">
                 We developer conplex interface systems <br /> for Web , Mobile &
                 Ar
               </h1>
-              <img src={Img_Home} className="img-fluid mt-5" />
+              <img src={Img_Home} className="img-fluid mt-5 headline" />
             </div>
           </div>
         </div>
@@ -45,14 +57,14 @@ const Home = (props) => {
         <div className="container mx-auto">
           <div className="row">
             <div className="col">
-              <h3 className="fw-semibold text-center my-5">
+              <h3 className="fw-semibold text-center my-5 headline">
                 Our Work Select Projects
               </h3>
-              <div className="row row-cols-1 row-cols-lg-2 g-3">
+              <div className="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-3">
                 {Works.map((work) => {
                   return (
                     <div>
-                      <div key={work.id} className="col">
+                      <div key={work.id} className="col headline">
                         <div className="card border-0 shadow">
                           <img src={work.src} className="card-img-top" />
                           <div className="card-body">
@@ -67,10 +79,10 @@ const Home = (props) => {
                   );
                 })}
               </div>
-              <div className="d-flex align-items-center justify-content-end">
+              <div className="d-flex align-items-center justify-content-end headline">
                 <h6 className="fw-semibold my-5 mx-3">MORE CASE</h6>
                 <button className="btn btn-secondary bg-white border-0 rounded-circle shadow">
-                  <img src={Angle} />
+                  <i className="fa-solid fa-angle-right text-black"></i>
                 </button>
               </div>
             </div>
@@ -82,23 +94,23 @@ const Home = (props) => {
         <div className="container mx-auto">
           <div className="row justify-content-between my-5">
             <div className="col-lg-6 mb-3 mb-lg-0">
-              <h1 className="fw-semibold">Our Services</h1>
+              <h1 className="fw-semibold headline">Our Services</h1>
             </div>
             <div className="col-lg-6">
-              <h5 className="fw-fold">
-                As a strategic partner, we create a working product with 
-                a thoughtful and large-scale architecture. We launch,
-                support and development.
+              <h5 className="fw-fold headline">
+                As a strategic partner, we create a working product with a
+                thoughtful and large-scale architecture. We launch, support and
+                development.
               </h5>
             </div>
           </div>
           <div className="row">
             <div className="col">
-              <div className="row row-cols-1 row-cols-lg-4 g-3">
+              <div className="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-3">
                 {Services.map((service) => {
                   return (
                     <div>
-                      <div key={service.id} className="col">
+                      <div key={service.id} className="col headline">
                         <div className="card border-0 shadow">
                           <div className="text-center">
                             <img
@@ -117,10 +129,10 @@ const Home = (props) => {
                   );
                 })}
               </div>
-              <div className="d-flex align-items-center justify-content-end">
+              <div className="d-flex align-items-center justify-content-end headline">
                 <h6 className="fw-semibold my-5 mx-3">EXPLORE MORE</h6>
                 <button className="btn btn-secondary bg-white border-0 rounded-circle shadow">
-                  <img src={Angle} />
+                  <i className="fa-solid fa-angle-right text-black"></i>
                 </button>
               </div>
             </div>
@@ -134,7 +146,7 @@ const Home = (props) => {
             <div className="col text-center">
               <h5 className="fw-semibold text-secondary mt-3">Next</h5>
               <h1 className="fw-bold mt-3">Our Story</h1>
-              <img src={Arrow} className="w-5 mt-3" />
+              <i className="fa-solid fa-arrow-right fs-3"></i>
             </div>
           </div>
         </div>
@@ -144,16 +156,41 @@ const Home = (props) => {
         <div className="container mx-auto">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-4 text-center mb-3 mb-lg-0">
-              <NavLink to="/" className="fw-semibold text-black text-decoration-none h5 mx-3">Works</NavLink>
-              <NavLink to="story" className="fw-semibold text-black text-decoration-none h5 mx-3">Story</NavLink>
-              <NavLink to="service" className="fw-semibold text-black text-decoration-none h5 mx-3">Services</NavLink>
+              <NavLink
+                to="/"
+                className="fw-semibold text-black text-decoration-none h5 mx-3"
+              >
+                Works
+              </NavLink>
+              <NavLink
+                to="story"
+                className="fw-semibold text-black text-decoration-none h5 mx-3"
+              >
+                Story
+              </NavLink>
+              <NavLink
+                to="service"
+                className="fw-semibold text-black text-decoration-none h5 mx-3"
+              >
+                Services
+              </NavLink>
             </div>
             <div className="col-lg-4 text-center mb-2 mb-lg-0">
               <h1 className="fw-bold">Repohub</h1>
             </div>
             <div className="col-lg-4 text-center">
-              <NavLink to="/" className="fw-semibold text-black text-decoration-none h5 mx-3">Ceacer</NavLink>
-              <NavLink to="contact" className="fw-semibold text-black text-decoration-none h5 mx-3">Contact Us</NavLink>
+              <NavLink
+                to="/"
+                className="fw-semibold text-black text-decoration-none h5 mx-3"
+              >
+                Ceacer
+              </NavLink>
+              <NavLink
+                to="contact"
+                className="fw-semibold text-black text-decoration-none h5 mx-3"
+              >
+                Contact Us
+              </NavLink>
             </div>
           </div>
         </div>
