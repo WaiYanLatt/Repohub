@@ -6,7 +6,7 @@ const Navbar = (props) => {
       <nav className="navbar navbar-expand-lg shadow bg-white">
         <div className="container">
           <a className="navbar-brand" href="#">
-            <h3 className="fw-bold">Repohub</h3>
+            <h3 className="fw-bold text-warning">Repohub</h3>
           </a>
           <div className="" id="navbarSupportedContent">
             <button
@@ -29,7 +29,7 @@ const Navbar = (props) => {
         aria-labelledby="offcanvasTopLabel"
       >
         <div className="offcanvas-header container pb-0">
-          <h3 className="offcanvas-title fw-bold" id="offcanvasTopLabel">
+          <h3 className="offcanvas-title fw-bold text-warning" id="offcanvasTopLabel">
             Repohub
           </h3>
           <button
@@ -45,7 +45,7 @@ const Navbar = (props) => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "text-primary fw-bold h5 text-decoration-none"
+                    ? "text-warning fw-bold h5 text-decoration-none"
                     : "fw-semibold h5 text-decoration-none"
                 }
                 to="/"
@@ -57,7 +57,7 @@ const Navbar = (props) => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "text-primary fw-bold h5 text-decoration-none"
+                    ? "text-warning fw-bold h5 text-decoration-none"
                     : "fw-semibold h5 text-decoration-none"
                 }
                 to="story"
@@ -69,7 +69,7 @@ const Navbar = (props) => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "text-primary fw-bold h5 text-decoration-none"
+                    ? "text-warning fw-bold h5 text-decoration-none"
                     : "fw-semibold h5 text-decoration-none"
                 }
                 to="service"
@@ -81,7 +81,7 @@ const Navbar = (props) => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "text-primary fw-bold h5 text-decoration-none"
+                    ? "text-warning fw-bold h5 text-decoration-none"
                     : "fw-semibold h5 text-decoration-none"
                 }
                 to="contact"

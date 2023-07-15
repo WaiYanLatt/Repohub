@@ -3,6 +3,7 @@ import Img_Home from "../../assets/img/digital.png";
 import Service1 from "../../assets/img/our_service_1 1.png";
 import Service2 from "../../assets/img/our_service_2 1.png";
 import Service3 from "../../assets/img/our_service_3.png";
+import Service4 from "../../assets/img/our_service_4 1.png";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
@@ -20,7 +21,7 @@ const Home = (props) => {
     { id: 1, src: [Service1], subtitle: "Research & Analysis" },
     { id: 2, src: [Service2], subtitle: "Research & Analysis" },
     { id: 3, src: [Service3], subtitle: "Research & Analysis" },
-    { id: 4, src: [Service1], subtitle: "Research & Analysis" },
+    { id: 4, src: [Service4], subtitle: "Research & Analysis" },
   ];
 
   useEffect(() => {
@@ -42,12 +43,12 @@ const Home = (props) => {
         <div className="container mx-auto">
           <div className="row">
             <div className="col-12">
-              <h1 className="fw-normal mt-5 headline">Digital Agency</h1>
+              <h1 className="fw-normal mt-5">Digital Agency</h1>
               <h1 className="fw-semibold mt-5 headline">
                 We developer conplex interface systems <br /> for Web , Mobile &
                 Ar
               </h1>
-              <img src={Img_Home} className="img-fluid mt-5 headline" />
+              <img src={Img_Home} className="img-fluid mt-5" />
             </div>
           </div>
         </div>
@@ -57,7 +58,7 @@ const Home = (props) => {
         <div className="container mx-auto">
           <div className="row">
             <div className="col">
-              <h3 className="fw-semibold text-center my-5 headline">
+              <h3 className="fw-semibold text-center my-5">
                 Our Work Select Projects
               </h3>
               <div className="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-3">
@@ -79,7 +80,7 @@ const Home = (props) => {
                   );
                 })}
               </div>
-              <div className="d-flex align-items-center justify-content-end headline">
+              <div className="d-flex align-items-center justify-content-end">
                 <h6 className="fw-semibold my-5 mx-3">MORE CASE</h6>
                 <button className="btn btn-secondary bg-white border-0 rounded-circle shadow">
                   <i className="fa-solid fa-angle-right text-black"></i>
@@ -94,10 +95,10 @@ const Home = (props) => {
         <div className="container mx-auto">
           <div className="row justify-content-between my-5">
             <div className="col-lg-6 mb-3 mb-lg-0">
-              <h1 className="fw-semibold headline">Our Services</h1>
+              <h1 className="fw-semibold">Our Services</h1>
             </div>
             <div className="col-lg-6">
-              <h5 className="fw-fold headline">
+              <h5 className="fw-fold">
                 As a strategic partner, we create a working product with a
                 thoughtful and large-scale architecture. We launch, support and
                 development.
@@ -129,7 +130,7 @@ const Home = (props) => {
                   );
                 })}
               </div>
-              <div className="d-flex align-items-center justify-content-end headline">
+              <div className="d-flex align-items-center justify-content-end">
                 <h6 className="fw-semibold my-5 mx-3">EXPLORE MORE</h6>
                 <button className="btn btn-secondary bg-white border-0 rounded-circle shadow">
                   <i className="fa-solid fa-angle-right text-black"></i>
