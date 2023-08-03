@@ -6,6 +6,7 @@ import Service3 from "../../assets/img/our_service_3.png";
 import Service4 from "../../assets/img/our_service_4 1.png";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import { Helmet } from "react-helmet";
 
 const Home = (props) => {
   const Works = [
@@ -38,6 +39,42 @@ const Home = (props) => {
 
   return (
     <div>
+      <Helmet>
+        <title>Repohub</title>
+        <meta name="title" content="Repohub" />
+        <meta
+          name="description"
+          content="We developer conplex interface systems
+           for Web , Mobile & Ar"
+        />
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io" />
+        <meta property="og:title" content="Repohub" />
+        <meta
+          property="og:description"
+          content="We developer conplex interface systems
+           for Web , Mobile & Ar"
+        />
+        <meta
+          property="og:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io" />
+        <meta property="twitter:title" content="Repohub" />
+        <meta
+          property="twitter:description"
+          content="We developer conplex interface systems
+           for Web , Mobile & Ar"
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
+      </Helmet>
       {/* Home section */}
       <section className="my-5">
         <div className="container mx-auto">
