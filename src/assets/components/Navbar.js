@@ -1,45 +1,53 @@
 import { NavLink } from "react-router-dom";
+import "../../assets/css/cus.css";
+import { useState } from "react";
 
 const Navbar = (props) => {
+  const [open, setOpen] = useState(false);
+
+  const menu = () => {
+    setOpen(!open);
+  };
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg shadow bg-white">
+      <nav className="navbar navbar-expand-lg bg-white z-1000">
         <div className="container">
           <a className="navbar-brand" href="#">
             <h3 className="fw-bold text-warning">Repohub</h3>
           </a>
           <div className="" id="navbarSupportedContent">
-            <button
-              className="btn border-0 fw-semibold"
+            <div
+              className={`${open ? "show" : ""} menu-icon`}
+              onClick={menu}
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasTop"
               aria-controls="offcanvasTop"
             >
-              Menu
-            </button>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </nav>
 
       <div
         className="offcanvas offcanvas-top shadow"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasTop"
         aria-labelledby="offcanvasTopLabel"
       >
         <div className="offcanvas-header container pb-0">
-          <h3 className="offcanvas-title fw-bold text-warning" id="offcanvasTopLabel">
+          <h3
+            className="offcanvas-title fw-bold text-warning"
+            id="offcanvasTopLabel"
+          >
             Repohub
           </h3>
-          <button
-            type="button"
-            className="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
         </div>
-        <div className="offcanvas-body container ">
+        <div className="offcanvas-body container py-lg-3 py-5">
           <ul className="list-group list-group-flush">
             <li className="list-group-item border-0 p-0">
               <NavLink

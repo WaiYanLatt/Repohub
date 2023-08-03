@@ -4,7 +4,6 @@ import "./index.css";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import "./cus.scss";
-import "./assets/css/cus.css"
 import "./assets/packages/fontawesome-free-6.1.1-web/css/all.min.css"
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
