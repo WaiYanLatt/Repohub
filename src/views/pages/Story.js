@@ -45,7 +45,6 @@ const Story = (props) => {
           </div>
         </div>
       </section>
-      <hr className="text-secondary" />
       {/* footer section */}
       <section className="bg-white py-3 py-lg-5 ">
         <div className="container mx-auto">

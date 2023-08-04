@@ -2,12 +2,16 @@ import { NavLink } from "react-router-dom";
 import "../../assets/css/cus.css";
 import { useState } from "react";
 
+
+
+
 const Navbar = (props) => {
   const [open, setOpen] = useState(false);
 
   const menu = () => {
     setOpen(!open);
   };
+  
 
   return (
     <div>
@@ -34,7 +38,7 @@ const Navbar = (props) => {
       </nav>
 
       <div
-        className="offcanvas offcanvas-top shadow"
+        className="offcanvas offcanvas-top change shadow"
         tabIndex="-1"
         id="offcanvasTop"
         aria-labelledby="offcanvasTopLabel"
@@ -47,8 +51,8 @@ const Navbar = (props) => {
             Repohub
           </h3>
         </div>
-        <div className="offcanvas-body container py-lg-3 py-5">
-          <ul className="list-group list-group-flush">
+        <div className="offcanvas-body container  py-lg-3 py-5">
+          <ul className="list-group list-group-flush ">
             <li className="list-group-item border-0 p-0">
               <NavLink
                 className={({ isActive }) =>

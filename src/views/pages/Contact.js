@@ -60,7 +60,7 @@ const Contact = (props) => {
       <section className="my-5 container mx-auto">
         <div className="row row-cols-lg-3 row-cols-1">
           <div className="col mt-3 mt-lg-0">
-            <div className="card w-100 border-0">
+            <div className="card bg-white p-3 w-100 border-0">
               <div classNmae="card-body">
                 <p className="text-secondary fs-6 text-center text-lg-start">General inquiries —</p>
                 <h4 className="fw-bold text-center text-lg-start">Quick chat</h4>
@@ -72,7 +72,7 @@ const Contact = (props) => {
             </div>
           </div>
           <div className="col mt-3 mt-lg-0">
-            <div className="card w-100 border-0">
+            <div className="card bg-white p-3 w-100 border-0">
               <div classNmae="card-body">
                 <p className="text-secondary fs-6 text-center text-lg-start">New business —</p>
                 <h4 className="fw-bold text-center text-lg-start">hi@repohub.co</h4>
@@ -83,7 +83,7 @@ const Contact = (props) => {
             </div>
           </div>
           <div className="col mt-3 mt-lg-0">
-            <div className="card w-100 border-0">
+            <div className="card bg-white p-3 w-100 border-0">
               <div classNmae="card-body">
                 <p className="text-secondary fs-6  text-center text-lg-start">Office —</p>
                 <h4 className="fw-bold  text-center text-lg-start">Yangon</h4>

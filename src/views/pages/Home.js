@@ -187,7 +187,7 @@ const Home = (props) => {
                 to="story"
                 className="fw-semibold text-black text-decoration-none mx-3"
               >
-                <h1 className="fw-bold">Our Story</h1>
+                <h1 className="fw-bold text">Our Story</h1>
               </Link>
               <i className="fa-solid fa-arrow-right fs-3"></i>
             </div>

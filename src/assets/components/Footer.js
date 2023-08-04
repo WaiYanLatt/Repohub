@@ -9,19 +9,19 @@ const Footer = (props) => {
             <div className="col-lg-4 text-center mb-3 mb-lg-0">
               <Link
                 to="/"
-                className="fw-semibold text-black text-decoration-none h5 mx-3"
+                className="fw-semibold  text-decoration-none h5 mx-3"
               >
                 Works
               </Link>
               <Link
                 to="story"
-                className="fw-semibold text-black text-decoration-none h5 mx-3"
+                className="fw-semibold text-decoration-none h5 mx-3"
               >
                 Story
               </Link>
               <Link
                 to="service"
-                className="fw-semibold text-black text-decoration-none h5 mx-3"
+                className="fw-semibold text-decoration-none h5 mx-3"
               >
                 Services
               </Link>
@@ -32,13 +32,13 @@ const Footer = (props) => {
             <div className="col-lg-4 text-center">
               <Link
                 to="/"
-                className="fw-semibold text-black text-decoration-none h5 mx-3"
+                className="fw-semibold text-decoration-none h5 mx-3"
               >
                 Ceacer
               </Link>
               <Link
                 to="contact"
-                className="fw-semibold text-black text-decoration-none h5 mx-3"
+                className="fw-semibold text-decoration-none h5 mx-3"
               >
                 Contact Us
               </Link>
